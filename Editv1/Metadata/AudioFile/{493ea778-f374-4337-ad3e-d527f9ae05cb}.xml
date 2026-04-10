@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{493ea778-f374-4337-ad3e-d527f9ae05cb}">
+		<property name="assetPath">
+			<value>stone_walk/amb_steps_stone_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.38166666666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{92d68a34-7a6b-4f10-9827-22e2dbcee54f}</destination>
+		</relationship>
+	</object>
+</objects>

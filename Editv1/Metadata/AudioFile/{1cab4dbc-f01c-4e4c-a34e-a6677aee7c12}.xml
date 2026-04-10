@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{1cab4dbc-f01c-4e4c-a34e-a6677aee7c12}">
+		<property name="assetPath">
+			<value>stone_jump/amb_jump_stone_5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.83020833333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{92d68a34-7a6b-4f10-9827-22e2dbcee54f}</destination>
+		</relationship>
+	</object>
+</objects>

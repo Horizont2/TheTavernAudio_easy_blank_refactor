@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{93f0d427-fb89-4142-963a-21ffedfeaf68}">
+		<property name="assetPath">
+			<value>wood_walk/amb_steps_wood_6.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.39360416666666664</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{92d68a34-7a6b-4f10-9827-22e2dbcee54f}</destination>
+		</relationship>
+	</object>
+</objects>
