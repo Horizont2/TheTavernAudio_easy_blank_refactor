@@ -1,25 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9033745791218181170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: Editv1/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 639114144167465243
-  FileSizes:
-  - Name: Desktop
-    Value: 8840192
-  Exists: 1
 --- !u!114 &-8388367290679936033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/stairs_steps
+  m_Name: event:/Stairs_steps
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/stairs_steps
+  Path: event:/Stairs_steps
   Guid:
     Data1: 360531191
     Data2: 1177888008
     Data3: 969018004
     Data4: -721332242
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -57,16 +37,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/steps
+  m_Name: event:/Steps
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/steps
+  Path: event:/Steps
   Guid:
     Data1: -1707023218
     Data2: 1315224267
     Data3: 1071804574
     Data4: -351866744
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -94,7 +74,7 @@ MonoBehaviour:
     Data3: 1782503570
     Data4: 608268666
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -121,7 +101,7 @@ MonoBehaviour:
     Data3: -1641125752
     Data4: 1113569960
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -174,7 +154,7 @@ MonoBehaviour:
     Data3: 1521292190
     Data4: -172171255
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -202,7 +182,7 @@ MonoBehaviour:
     Data3: -364010569
     Data4: -363344586
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -220,7 +200,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/stone_steps/Steps
+  m_Name: parameter:/Stone_steps/Steps
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
   Name: Steps
   StudioPath: 
@@ -247,7 +227,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/steps/Steps
+  m_Name: parameter:/Steps/Steps
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
   Name: Steps
   StudioPath: 
@@ -277,8 +257,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EventCache
   EditorBanks:
-  - {fileID: 4709582074383357044}
-  - {fileID: -9033745791218181170}
+  - {fileID: 2975406674042390308}
+  - {fileID: 6632752186110070936}
   EditorEvents:
   - {fileID: -2565956780791160146}
   - {fileID: 2668585568900241760}
@@ -297,29 +277,29 @@ MonoBehaviour:
   - {fileID: -8388367290679936033}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   StringsBanks:
-  - {fileID: 4709582074383357044}
+  - {fileID: 2975406674042390308}
   cacheVersion: 131859
-  cacheTime: 639114144167485307
+  cacheTime: 639126245886027338
   SerializableEventsDict:
   - key: event:/wood_steps
     index: 0
-  - key: event:/jump
+  - key: event:/Jump
     index: 1
   - key: event:/amb_lampfire
     index: 2
   - key: event:/Door_Close
     index: 3
-  - key: event:/steps
+  - key: event:/Steps
     index: 4
   - key: event:/amb_tavernmusic
     index: 5
-  - key: event:/stone_steps
+  - key: event:/Stone_steps
     index: 6
-  - key: event:/jump_wood
+  - key: event:/Jump_wood
     index: 7
-  - key: event:/jump_stone
+  - key: event:/Jump_stone
     index: 8
   - key: event:/Door_Open
     index: 9
@@ -331,7 +311,7 @@ MonoBehaviour:
     index: 12
   - key: event:/amb_forest
     index: 13
-  - key: event:/stairs_steps
+  - key: event:/Stairs_steps
     index: 14
 --- !u!114 &505222502939992370
 MonoBehaviour:
@@ -352,7 +332,7 @@ MonoBehaviour:
     Data3: -2094411365
     Data4: -485555611
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -379,7 +359,7 @@ MonoBehaviour:
     Data3: 1507801236
     Data4: -985083472
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -407,7 +387,7 @@ MonoBehaviour:
     Data3: 145123501
     Data4: -289864714
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -425,16 +405,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/jump
+  m_Name: event:/Jump
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/jump
+  Path: event:/Jump
   Guid:
     Data1: -1895131637
     Data2: 1283123894
     Data3: 598956682
     Data4: 782488979
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -443,6 +423,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 950
+--- !u!114 &2975406674042390308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: ../Editv1/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639126245886027338
+  FileSizes:
+  - Name: Desktop
+    Value: 1516
+  Exists: 1
 --- !u!114 &3831140626107354418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,16 +453,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/jump_wood
+  m_Name: event:/Jump_wood
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/jump_wood
+  Path: event:/Jump_wood
   Guid:
     Data1: 284641718
     Data2: 1114664709
     Data3: 665460113
     Data4: -1843852668
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -489,7 +489,7 @@ MonoBehaviour:
     Data3: -314754162
     Data4: 390304064
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -507,16 +507,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/stone_steps
+  m_Name: event:/Stone_steps
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/stone_steps
+  Path: event:/Stone_steps
   Guid:
     Data1: -1516859490
     Data2: 1250260456
     Data3: 1419804846
     Data4: -1150482960
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -525,7 +525,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 413
---- !u!114 &4709582074383357044
+--- !u!114 &6632752186110070936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -535,15 +535,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: Editv1/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639114144167485307
+  Path: ../Editv1/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639126245886012100
   FileSizes:
   - Name: Desktop
-    Value: 1516
+    Value: 8840192
   Exists: 1
 --- !u!114 &7137441695496329576
 MonoBehaviour:
@@ -564,7 +564,7 @@ MonoBehaviour:
     Data3: 1023523721
     Data4: -143805513
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -582,16 +582,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/jump_stone
+  m_Name: event:/Jump_stone
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/jump_stone
+  Path: event:/Jump_stone
   Guid:
     Data1: -1936283718
     Data2: 1337212527
     Data3: 1552038528
     Data4: 845716856
   Banks:
-  - {fileID: -9033745791218181170}
+  - {fileID: 6632752186110070936}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -636,9 +636,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/jump/jump
+  m_Name: parameter:/Jump/Jump
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: jump
+  Name: Jump
   StudioPath: 
   Min: 0
   Max: 1
@@ -649,6 +649,6 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - wood
-  - stone
+  - Wood
+  - Stone
   Exists: 1

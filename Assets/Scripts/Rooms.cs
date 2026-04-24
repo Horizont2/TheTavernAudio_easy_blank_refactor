@@ -3,39 +3,29 @@ using UnityEngine;
 /// <summary>
 /// Zarządza stanem ambientu pokoju w zależności od pozycji gracza.
 /// </summary>
+[RequireComponent(typeof(RoomAmbient))]
 public class Rooms : MonoBehaviour
 {
-    /// <summary>
-    /// Wywoływane, gdy inny collider pozostaje wewnątrz triggera.
-    /// </summary>
-    private void OnTriggerStay(Collider other)
+    private RoomAmbient myRoomAmbient;
+
+    private void Start()
     {
-        // Sprawdza, czy obiekt ma tag "Player".
-        if (other.CompareTag("Player"))
+        myRoomAmbient = GetComponent<RoomAmbient>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && myRoomAmbient != null)
         {
-            // Znajduje instancję RoomAmbient w scenie i ustawia flagę na true.
-            RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
-            if (roomAmbient != null)
-            {
-                roomAmbient.ambientActivated = true;
-            }
+            myRoomAmbient.ambientActivated = true;
         }
     }
 
-    /// <summary>
-    /// Wywoływane, gdy inny collider opuszcza trigger.
-    /// </summary>
     private void OnTriggerExit(Collider other)
     {
-        // Sprawdza, czy obiekt ma tag "Player".
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && myRoomAmbient != null)
         {
-            // Znajduje instancję RoomAmbient w scenie i ustawia flagę na false.
-            RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
-            if (roomAmbient != null)
-            {
-                roomAmbient.ambientActivated = false;
-            }
+            myRoomAmbient.ambientActivated = false;
         }
     }
 }

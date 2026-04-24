@@ -785,9 +785,8 @@ GameObject:
   - component: {fileID: 237163390}
   - component: {fileID: 237163392}
   - component: {fileID: 237163393}
-  - component: {fileID: 237163394}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: MainCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,37 +886,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
---- !u!114 &237163394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237163387}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1525919474
-      Data2: 1145828173
-      Data3: -314754162
-      Data4: 390304064
-    Path: event:/amb_forest
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &239062190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,7 +2165,7 @@ GameObject:
   - component: {fileID: 540904848}
   m_Layer: 6
   m_Name: Wood_stairs_1
-  m_TagString: Wood
+  m_TagString: Stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2311,6 +2279,7 @@ GameObject:
   - component: {fileID: 613997993}
   - component: {fileID: 613997990}
   - component: {fileID: 613997989}
+  - component: {fileID: 613997994}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2486,6 +2455,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &613997994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613997984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5662db7a78ed10944a62b27bb1056215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Footsteps
+  footstepsEvent:
+    Guid:
+      Data1: -1707023218
+      Data2: 1315224267
+      Data3: 1071804574
+      Data4: -351866744
+    Path: event:/Steps
+  footstepsParameterName: Steps
+  jumpEvent:
+    Guid:
+      Data1: -1895131637
+      Data2: 1283123894
+      Data3: 598956682
+      Data4: 782488979
+    Path: event:/Jump
+  jumpParameterName: Jump
 --- !u!1 &688602384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,8 +4853,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.879578, y: 5.4093485, z: 2.5799866}
-  m_Center: {x: 0.13687134, y: 2.2046742, z: -0.7899933}
+  m_Size: {x: 10.879578, y: 5.4093485, z: 2.7806396}
+  m_Center: {x: 0.13687134, y: 2.2046742, z: -0.68966675}
 --- !u!114 &1571016350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5095,7 +5092,7 @@ GameObject:
   - component: {fileID: 1610884564}
   m_Layer: 7
   m_Name: Stone_2
-  m_TagString: Inside_stone
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5696,7 +5693,7 @@ GameObject:
   - component: {fileID: 1710004320}
   m_Layer: 6
   m_Name: Wood_stairs_2
-  m_TagString: Wood
+  m_TagString: Stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6789,7 +6786,7 @@ GameObject:
   - component: {fileID: 2015243835}
   m_Layer: 7
   m_Name: Stone_1
-  m_TagString: Outside
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -526,8 +526,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Editv1/Editv1.fspro
-  sourceBankPath: Editv1/Build
+  sourceProjectPath: ../Editv1/Editv1.fspro
+  sourceBankPath: ../Editv1/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1

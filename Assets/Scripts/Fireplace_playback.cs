@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Fireplace_playback : MonoBehaviour
 {
     public FMODUnity.StudioEventEmitter fireplaceEmitter;
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        fireplaceEmitter.SetParameter("Fire", 0);
+        if (other.CompareTag("Player"))
+        {
+            fireplaceEmitter.SetParameter("Fire", 0);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        fireplaceEmitter.SetParameter("Fire", 1);
+        if (other.CompareTag("Player"))
+        {
+            fireplaceEmitter.SetParameter("Fire", 1);
+        }
     }
 }
