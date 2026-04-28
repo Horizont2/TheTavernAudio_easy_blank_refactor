@@ -275,13 +275,15 @@ MonoBehaviour:
   - {fileID: -2184867736627394401}
   - {fileID: 4165521448045112822}
   - {fileID: -8388367290679936033}
+  - {fileID: 6253653942598453773}
+  - {fileID: 4412019003853354480}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6632752186110070936}
   StringsBanks:
   - {fileID: 2975406674042390308}
   cacheVersion: 131859
-  cacheTime: 639126245886027338
+  cacheTime: 639129764031230635
   SerializableEventsDict:
   - key: event:/wood_steps
     index: 0
@@ -313,6 +315,10 @@ MonoBehaviour:
     index: 13
   - key: event:/Stairs_steps
     index: 14
+  - key: snapshot:/Inside
+    index: 15
+  - key: snapshot:/Outside
+    index: 16
 --- !u!114 &505222502939992370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,10 +444,10 @@ MonoBehaviour:
   Path: ../Editv1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639126245886027338
+  lastModified: 639129764031230635
   FileSizes:
   - Name: Desktop
-    Value: 1516
+    Value: 1726
   Exists: 1
 --- !u!114 &3831140626107354418
 MonoBehaviour:
@@ -497,6 +503,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 87875
+--- !u!114 &4412019003853354480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Outside
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: snapshot:/Outside
+  Guid:
+    Data1: -134402847
+    Data2: 1242984462
+    Data3: -1200191318
+    Data4: -1556198204
+  Banks:
+  - {fileID: 6632752186110070936}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &4617291244672577633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,6 +558,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 413
+--- !u!114 &6253653942598453773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Inside
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: snapshot:/Inside
+  Guid:
+    Data1: -1535304670
+    Data2: 1261971612
+    Data3: 619694749
+    Data4: 1493876520
+  Banks:
+  - {fileID: 6632752186110070936}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &6632752186110070936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,10 +600,10 @@ MonoBehaviour:
   Path: ../Editv1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639126245886012100
+  lastModified: 639129764031215588
   FileSizes:
   - Name: Desktop
-    Value: 8840192
+    Value: 8842336
   Exists: 1
 --- !u!114 &7137441695496329576
 MonoBehaviour:

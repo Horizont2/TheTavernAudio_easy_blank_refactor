@@ -15,7 +15,7 @@ public class Footsteps : MonoBehaviour
     [Header("Jump Settings (Jump)")]
     public EventReference jumpEvent;
     [Tooltip("Parameter name in FMOD for jumps")]
-    public string jumpParameterName = "Jump"; // Зміни в Інспекторі, якщо параметр називається інакше
+    public string jumpParameterName = "Jump";
 
     private float lastFootstepTime = 0f;
     private float distToGround;
@@ -50,9 +50,11 @@ public class Footsteps : MonoBehaviour
     {
         bool isCurrentlyGrounded = IsGrounded();
 
-        if (Input.GetKeyDown(KeyCode.Space) && isCurrentlyGrounded)
+        // FIX: We use 'wasGrounded' instead of 'isCurrentlyGrounded'.
+        // This ensures the sound plays even if the FPS Controller has already 
+        // started lifting the player off the ground in this exact frame.
+        if (Input.GetKeyDown(KeyCode.Space) && wasGrounded)
         {
-            // Передаємо івент стрибка та його власну назву параметра
             PlaySurfaceEvent(jumpEvent, jumpParameterName);
         }
 
@@ -71,14 +73,10 @@ public class Footsteps : MonoBehaviour
             if (Time.time - lastFootstepTime > footstepInterval)
             {
                 lastFootstepTime = Time.time;
-
-                // Передаємо івент кроків та його власну назву параметра
                 PlaySurfaceEvent(footstepsEvent, footstepsParameterName);
             }
         }
     }
-
-    // Тепер функція приймає назву параметра як аргумент (parameterName)
     private void PlaySurfaceEvent(EventReference eventRef, string parameterName)
     {
         if (eventRef.IsNull) return;
@@ -114,7 +112,6 @@ public class Footsteps : MonoBehaviour
                 var soundInstance = RuntimeManager.CreateInstance(eventRef);
                 soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform));
 
-                // Використовуємо динамічну назву параметра
                 soundInstance.setParameterByNameWithLabel(parameterName, surfaceParameterValue);
                 soundInstance.start();
                 soundInstance.release();
