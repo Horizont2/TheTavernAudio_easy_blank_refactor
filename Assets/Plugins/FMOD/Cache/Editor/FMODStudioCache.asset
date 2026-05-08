@@ -283,7 +283,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 2975406674042390308}
   cacheVersion: 131859
-  cacheTime: 639129764031230635
+  cacheTime: 639138406186310516
   SerializableEventsDict:
   - key: event:/wood_steps
     index: 0
@@ -373,7 +373,7 @@ MonoBehaviour:
   - {fileID: -2881303495439065393}
   MinDistance: 1
   MaxDistance: 20
-  Length: 2679
+  Length: 1400
 --- !u!114 &1577506825172794214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,7 +428,7 @@ MonoBehaviour:
   - {fileID: 7876516765512440156}
   MinDistance: 1
   MaxDistance: 20
-  Length: 950
+  Length: 1010
 --- !u!114 &2975406674042390308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,10 +444,10 @@ MonoBehaviour:
   Path: ../Editv1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639129764031230635
+  lastModified: 639138406186310516
   FileSizes:
   - Name: Desktop
-    Value: 1726
+    Value: 1906
   Exists: 1
 --- !u!114 &3831140626107354418
 MonoBehaviour:
@@ -600,10 +600,10 @@ MonoBehaviour:
   Path: ../Editv1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639129764031215588
+  lastModified: 639138406186290514
   FileSizes:
   - Name: Desktop
-    Value: 8842336
+    Value: 8845728
   Exists: 1
 --- !u!114 &7137441695496329576
 MonoBehaviour:
