@@ -277,13 +277,14 @@ MonoBehaviour:
   - {fileID: -8388367290679936033}
   - {fileID: 6253653942598453773}
   - {fileID: 4412019003853354480}
+  - {fileID: 3861263851250166802}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6632752186110070936}
   StringsBanks:
   - {fileID: 2975406674042390308}
   cacheVersion: 131859
-  cacheTime: 639138406186310516
+  cacheTime: 639156499183897340
   SerializableEventsDict:
   - key: event:/wood_steps
     index: 0
@@ -319,6 +320,8 @@ MonoBehaviour:
     index: 15
   - key: snapshot:/Outside
     index: 16
+  - key: event:/amb_peopletalking
+    index: 17
 --- !u!114 &505222502939992370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,10 +447,10 @@ MonoBehaviour:
   Path: ../Editv1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639138406186310516
+  lastModified: 639156499183897340
   FileSizes:
   - Name: Desktop
-    Value: 1906
+    Value: 1950
   Exists: 1
 --- !u!114 &3831140626107354418
 MonoBehaviour:
@@ -476,6 +479,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 890
+--- !u!114 &3861263851250166802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb_peopletalking
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/amb_peopletalking
+  Guid:
+    Data1: -1629805863
+    Data2: 1084936907
+    Data3: -1209104460
+    Data4: 2066703855
+  Banks:
+  - {fileID: 6632752186110070936}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 90437
 --- !u!114 &4165521448045112822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,10 +630,10 @@ MonoBehaviour:
   Path: ../Editv1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639138406186290514
+  lastModified: 639156499183877012
   FileSizes:
   - Name: Desktop
-    Value: 8845728
+    Value: 9688224
   Exists: 1
 --- !u!114 &7137441695496329576
 MonoBehaviour:

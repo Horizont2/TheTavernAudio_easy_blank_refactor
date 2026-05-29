@@ -5314,9 +5314,9 @@ MonoBehaviour:
   Preload: 0
   NonRigidbodyVelocity: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 3.897369
+  OverrideMaxDistance: 16.42032
 --- !u!135 &1577722053
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5404,7 +5404,7 @@ Transform:
   m_GameObject: {fileID: 1577722051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400.357, y: 7.992, z: 318.346}
+  m_LocalPosition: {x: 401.29, y: 7.992, z: 316.748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7512,11 +7512,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 438232018
-      Data2: 1180444737
-      Data3: -1641125752
-      Data4: 1113569960
-    Path: event:/amb_tavern
+      Data1: -1629805863
+      Data2: 1084936907
+      Data3: -1209104460
+      Data4: 2066703855
+    Path: event:/amb_peopletalking
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 0
@@ -7525,9 +7525,9 @@ MonoBehaviour:
   Preload: 0
   NonRigidbodyVelocity: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 3.897369
+  OverrideMaxDistance: 16.42032
 --- !u!135 &2017471359
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7615,7 +7615,7 @@ Transform:
   m_GameObject: {fileID: 2017471357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400.357, y: 7.992, z: 318.346}
+  m_LocalPosition: {x: 401.29, y: 7.992, z: 316.748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
